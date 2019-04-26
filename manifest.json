@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Tubeublock - Auto Play",
+    "version": "0.1",
+    "icons": {
+        "16": "logo.png",
+        "32": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://tubeunblock.com/watch?v=*"
+            ],
+            "js": ["jquery.min.js", "content.js"]
+        }
+    ]
+}
